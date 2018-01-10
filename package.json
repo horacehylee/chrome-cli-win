@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "axios": "0.17.1",
+    "bluebird": "^3.5.1",
     "chalk": "2.3.0",
     "class-transformer": "0.1.8",
     "cli-table2": "0.2.0",
@@ -32,6 +33,7 @@
     "yargs": "10.0.3"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.19",
     "@types/chai": "4.0.4",
     "@types/chai-arrays": "1.0.2",
     "@types/chai-as-promised": "7.1.0",
@@ -46,7 +48,7 @@
     "@types/sinon-chai": "2.7.29",
     "@types/supertest": "2.0.3",
     "@types/update-notifier": "1.0.2",
-    "@types/yargs": "10.0.0",
+    "@types/yargs": "^10.0.1",
     "backpack-core": "0.4.3",
     "chai": "4.1.2",
     "chai-arrays": "2.0.0",

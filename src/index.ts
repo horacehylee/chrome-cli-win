@@ -18,5 +18,5 @@ import { registerCommands } from "./commands";
 
 const argv = registerCommands(yargs);
 const args = argv
-  .demandCommand(1, "You need at least one command before moving on")
+  // .demandCommand(1, "You need at least one command before moving on")
   .help().argv;

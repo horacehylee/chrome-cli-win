@@ -1,8 +1,12 @@
 import { CommandModule } from "yargs";
 import { log, pretty } from "./index";
 
+import { promisify } from "bluebird";
+import { exec } from "child_process";
+const execAsync = promisify(exec);
+
 export const TestCommand: CommandModule = {
-  command: "test",
+  command: "*",
   aliases: "t",
   describe: "Just for testing",
   builder: {
@@ -13,8 +17,7 @@ export const TestCommand: CommandModule = {
     }
   },
   handler: async argv => {
-    log("Just for testing");
-    log(`Here are the argv`);
+    await execAsync("start chrome");
     log(`${pretty(argv)}`);
   }
 };
